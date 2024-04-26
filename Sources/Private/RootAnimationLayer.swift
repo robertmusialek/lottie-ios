@@ -36,6 +36,7 @@ protocol RootAnimationLayer: CALayer {
   func logHierarchyKeypaths()
   func allHierarchyKeypaths() -> [String]
   func setValueProvider(_ valueProvider: AnyValueProvider, keypath: AnimationKeypath)
+    func cleanValueProviders()
   func getValue(for keypath: AnimationKeypath, atFrame: AnimationFrameTime?) -> Any?
   func getOriginalValue(for keypath: AnimationKeypath, atFrame: AnimationFrameTime?) -> Any?
 

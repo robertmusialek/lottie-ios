@@ -40,6 +40,10 @@ final class ValueProviderStore {
     valueProviders.append((keypath: keypath, valueProvider: valueProvider))
   }
 
+    func cleanValueProviders() {
+        valueProviders.removeAll()
+    }
+    
   // Retrieves the custom value keyframes for the given property,
   // if an `AnyValueProvider` was registered for the given keypath.
   func customKeyframes<Value>(

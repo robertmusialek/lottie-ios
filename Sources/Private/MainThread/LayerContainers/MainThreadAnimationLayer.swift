@@ -240,6 +240,9 @@ final class MainThreadAnimationLayer: CALayer, RootAnimationLayer {
     }
   }
 
+    func cleanValueProviders() {
+    }
+    
   func getValue(for keypath: AnimationKeypath, atFrame: CGFloat?) -> Any? {
     for layer in animationLayers {
       if

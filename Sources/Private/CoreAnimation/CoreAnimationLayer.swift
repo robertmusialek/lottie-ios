@@ -495,6 +495,11 @@ extension CoreAnimationLayer: RootAnimationLayer {
     rebuildCurrentAnimation()
   }
 
+    func cleanValueProviders() {
+        valueProviderStore.cleanValueProviders()
+        rebuildCurrentAnimation()
+    }
+    
   func getValue(for _: AnimationKeypath, atFrame _: AnimationFrameTime?) -> Any? {
     logger.assertionFailure("""
       The Core Animation rendering engine doesn't support querying values for individual frames
