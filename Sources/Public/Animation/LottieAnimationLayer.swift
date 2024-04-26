@@ -1164,9 +1164,9 @@ public class LottieAnimationLayer: CALayer {
 
     animationLayer.lottieAnimationLayer = self
 
-    for (keypath, valueProvider) in valueProviders {
-      animationLayer.setValueProvider(valueProvider, keypath: keypath)
-    }
+//    for (keypath, valueProvider) in valueProviders {
+//      animationLayer.setValueProvider(valueProvider, keypath: keypath)
+//    }
 
     animationLayerDidLoad?(self, renderingEngine)
 
